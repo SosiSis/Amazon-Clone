@@ -9,12 +9,8 @@ import Payment from './Payment';
 import {loadStripe} from '@stripe/stripe-js';
 import {Elements} from '@stripe/react-stripe-js';
 
-export class  extends React.Component {
-  render() {
-    return ();
-  }
-}
-'
+
+
 
 function App() {
   return (
