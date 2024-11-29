@@ -1,20 +1,29 @@
 import React from 'react'
 import "./Home.css"
 import Product from './Product'
+import banner from './assets/banner.jpg'
+import item1 from './assets/item1.jpg'
+import item2 from './assets/item2.jpg'
+import item3 from './assets/item3.jpg'
+import item4 from './assets/item4.jpg'
+import item5 from './assets/item5.jpg'
+
+
+
 
 function Home() {
   return (
     <div className='home'>
         <div className='home__container'>
 
-            <img  className='home__image'alt="Delightful deals for everyone" src="https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71j8damPo5L._SX3000_.jpg" />
+            <img  className='home__image'alt="Delightful deals for everyone" src={banner} />
                 <div className='home__row'>
                   <Product 
                     id='123455'
                     title="The Lean  startup"
                     price={11.96}
                     rating={5}
-                    image='https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T1/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_2x_v5._SY608_CB573698005_.jpg'
+                    image={item1}
                     initialPrice={11.96}
                   />
                   <Product 
@@ -22,8 +31,8 @@ function Home() {
                   title="The Lean  startup"
                   price={9.96}
                   rating={5}
-                  image='	https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/41X4x4lFQBL._SR270,360_.jpg
-                  '
+                  image={item2}
+                  
                   initialPrice={9.96}
                 />
                   
@@ -34,8 +43,7 @@ function Home() {
                   title="The Lean  startup"
                   price={119}
                   rating={5}
-                  image='https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/41ZTAIZANUL._SR270,360_.jpg
-                  '
+                  image={item2}
                   initialPrice={119}
                    />
                   <Product 
@@ -43,8 +51,7 @@ function Home() {
                   title="The Lean  startup"
                   price={11.96}
                   rating={3}
-                  image='	https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/41sxkAKd+6L._SR270,360_.jpg
-                  '
+                  image={item3}
                   initialPrice={11.96}
                    />
                   <Product
@@ -52,7 +59,7 @@ function Home() {
                   title="The Lean  startup"
                   price={796}
                   rating={3}
-                  image='https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/41cVuXdM8TL._SR270,360_.jpg'
+                  image={item4}
                   initialPrice={796}
                    />
                 </div>
@@ -62,7 +69,7 @@ function Home() {
                   title="The Lean  startup"
                   price={116}
                   rating={2}
-                  image='https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/41cPkLyz2WL._SR270,360_.jpg'
+                  image={item5}
                   initialPrice={116}
                    />
                  
